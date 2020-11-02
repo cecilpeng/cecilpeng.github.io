@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>前后端分离 | cecilpeng的程序员生活</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    
+    <meta name="description" content="">
+    <link rel="preload" href="/assets/css/0.styles.ccac5a78.css" as="style"><link rel="preload" href="/assets/js/app.7e8a2d8e.js" as="script"><link rel="preload" href="/assets/js/2.9542452a.js" as="script"><link rel="preload" href="/assets/js/31.49679ed7.js" as="script"><link rel="prefetch" href="/assets/js/10.2597a190.js"><link rel="prefetch" href="/assets/js/11.61e835c0.js"><link rel="prefetch" href="/assets/js/12.297cfe25.js"><link rel="prefetch" href="/assets/js/13.97262368.js"><link rel="prefetch" href="/assets/js/14.60206188.js"><link rel="prefetch" href="/assets/js/15.db4cf688.js"><link rel="prefetch" href="/assets/js/16.00ce337e.js"><link rel="prefetch" href="/assets/js/17.c3c1f61d.js"><link rel="prefetch" href="/assets/js/18.49b72faa.js"><link rel="prefetch" href="/assets/js/19.7836b75d.js"><link rel="prefetch" href="/assets/js/20.e120c745.js"><link rel="prefetch" href="/assets/js/21.f769232a.js"><link rel="prefetch" href="/assets/js/22.607aa932.js"><link rel="prefetch" href="/assets/js/23.3f2748af.js"><link rel="prefetch" href="/assets/js/24.859b13c9.js"><link rel="prefetch" href="/assets/js/25.a9a379a7.js"><link rel="prefetch" href="/assets/js/26.ac85825c.js"><link rel="prefetch" href="/assets/js/27.886ec4b7.js"><link rel="prefetch" href="/assets/js/28.dff2e5a2.js"><link rel="prefetch" href="/assets/js/29.225a7219.js"><link rel="prefetch" href="/assets/js/3.13d0117a.js"><link rel="prefetch" href="/assets/js/30.fd424a0c.js"><link rel="prefetch" href="/assets/js/4.5ed19beb.js"><link rel="prefetch" href="/assets/js/5.ec64467b.js"><link rel="prefetch" href="/assets/js/6.076672e7.js"><link rel="prefetch" href="/assets/js/7.f7ea1115.js"><link rel="prefetch" href="/assets/js/8.91074f50.js"><link rel="prefetch" href="/assets/js/9.304b4997.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.ccac5a78.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">cecilpeng的程序员生活</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/study/" class="nav-link">
+  学习系列
+</a></div><div class="nav-item"><a href="/think/" class="nav-link">
+  思考系列
+</a></div><div class="nav-item"><a href="/work/" class="nav-link router-link-active">
+  创业系列
+</a></div><div class="nav-item"><a href="/life/" class="nav-link">
+  生活系列
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/study/" class="nav-link">
+  学习系列
+</a></div><div class="nav-item"><a href="/think/" class="nav-link">
+  思考系列
+</a></div><div class="nav-item"><a href="/work/" class="nav-link router-link-active">
+  创业系列
+</a></div><div class="nav-item"><a href="/life/" class="nav-link">
+  生活系列
+</a></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="前后端分离"><a href="#前后端分离" class="header-anchor">#</a> 前后端分离</h2> <p>前后端分离，最重要的分离点是接口。</p> <p>从服务能力上划分，接口有两个层次：</p> <ol><li>基础业务服务</li> <li>serverless服务</li></ol> <p>基础业务服务，主要考虑领域模型，区分动静信息、深浅层次，提供元数据。主要由服务端同学维护。</p> <p>serverless服务，主要考虑服务的聚合、筛选和其他通用函数。主要由前端同学维护。</p> <p>从接口质量来考虑，需要实现：</p> <ol><li>单元测试</li> <li>接口描述schema</li></ol> <p>单元测试，要解决依赖服务（数据库、redis、kafka）的mock问题，才能保证单元测试的有效。主要由服务端同学维护。</p> <p>接口描述schema，要解决接口文档的弱关系问题，实现接口的动态管理及数据的合法验证。由前端和服务端同学共同维护。</p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.7e8a2d8e.js" defer></script><script src="/assets/js/2.9542452a.js" defer></script><script src="/assets/js/31.49679ed7.js" defer></script>
+  </body>
+</html>

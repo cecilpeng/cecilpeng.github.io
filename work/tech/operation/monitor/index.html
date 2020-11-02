@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>质量监控 | cecilpeng的程序员生活</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    
+    <meta name="description" content="">
+    <link rel="preload" href="/assets/css/0.styles.ccac5a78.css" as="style"><link rel="preload" href="/assets/js/app.7e8a2d8e.js" as="script"><link rel="preload" href="/assets/js/2.9542452a.js" as="script"><link rel="preload" href="/assets/js/25.a9a379a7.js" as="script"><link rel="prefetch" href="/assets/js/10.2597a190.js"><link rel="prefetch" href="/assets/js/11.61e835c0.js"><link rel="prefetch" href="/assets/js/12.297cfe25.js"><link rel="prefetch" href="/assets/js/13.97262368.js"><link rel="prefetch" href="/assets/js/14.60206188.js"><link rel="prefetch" href="/assets/js/15.db4cf688.js"><link rel="prefetch" href="/assets/js/16.00ce337e.js"><link rel="prefetch" href="/assets/js/17.c3c1f61d.js"><link rel="prefetch" href="/assets/js/18.49b72faa.js"><link rel="prefetch" href="/assets/js/19.7836b75d.js"><link rel="prefetch" href="/assets/js/20.e120c745.js"><link rel="prefetch" href="/assets/js/21.f769232a.js"><link rel="prefetch" href="/assets/js/22.607aa932.js"><link rel="prefetch" href="/assets/js/23.3f2748af.js"><link rel="prefetch" href="/assets/js/24.859b13c9.js"><link rel="prefetch" href="/assets/js/26.ac85825c.js"><link rel="prefetch" href="/assets/js/27.886ec4b7.js"><link rel="prefetch" href="/assets/js/28.dff2e5a2.js"><link rel="prefetch" href="/assets/js/29.225a7219.js"><link rel="prefetch" href="/assets/js/3.13d0117a.js"><link rel="prefetch" href="/assets/js/30.fd424a0c.js"><link rel="prefetch" href="/assets/js/31.49679ed7.js"><link rel="prefetch" href="/assets/js/4.5ed19beb.js"><link rel="prefetch" href="/assets/js/5.ec64467b.js"><link rel="prefetch" href="/assets/js/6.076672e7.js"><link rel="prefetch" href="/assets/js/7.f7ea1115.js"><link rel="prefetch" href="/assets/js/8.91074f50.js"><link rel="prefetch" href="/assets/js/9.304b4997.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.ccac5a78.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">cecilpeng的程序员生活</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/study/" class="nav-link">
+  学习系列
+</a></div><div class="nav-item"><a href="/think/" class="nav-link">
+  思考系列
+</a></div><div class="nav-item"><a href="/work/" class="nav-link router-link-active">
+  创业系列
+</a></div><div class="nav-item"><a href="/life/" class="nav-link">
+  生活系列
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/study/" class="nav-link">
+  学习系列
+</a></div><div class="nav-item"><a href="/think/" class="nav-link">
+  思考系列
+</a></div><div class="nav-item"><a href="/work/" class="nav-link router-link-active">
+  创业系列
+</a></div><div class="nav-item"><a href="/life/" class="nav-link">
+  生活系列
+</a></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="质量监控"><a href="#质量监控" class="header-anchor">#</a> 质量监控</h2> <p>为什么要做质量监控呢？因为，质量是软件的生命线。</p> <p>在实际项目中，迭代速度快是常态。即使是老手，也无法知道所有的细节，想到所有的问题。况且，大多数情况下，一个老手带几个新手才是常态。应用监控系统，可以帮助我们做到：</p> <ol><li>收集用户环境信息 —— 知道我们主要的兼容场景是什么</li> <li>收集用户行为数据 —— 知道用户如何使用软件</li> <li>收集api错误 —— 知道依赖的服务端是否可信赖</li> <li>收集代码异常 —— 知道没有考虑的逻辑</li> <li>统计页面性能 —— 知道如何优化用户体验</li></ol> <p>质量监控在不同端的实现差异较大，下面我们分端来看如何践行。</p> <ol><li><a href="/work/tech/operation/monitor/web.html">前端</a></li> <li><a href="/work/tech/operation/monitor/server.html">服务端</a></li> <li><a href="/work/tech/operation/monitor/app.html">App</a></li></ol></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.7e8a2d8e.js" defer></script><script src="/assets/js/2.9542452a.js" defer></script><script src="/assets/js/25.a9a379a7.js" defer></script>
+  </body>
+</html>
